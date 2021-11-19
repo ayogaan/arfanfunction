@@ -1,0 +1,71 @@
+{{ define "main" }}
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <div class="col-4 mx-auto">
+        {{ if .Params.Image }}
+        <img src="{{ .Params.Image | absURL }}" alt="" class="img-fluid d-block mx-auto rounded-circle mb-4">
+        {{ end }}
+      </div>
+        <h5 class="widget-title">{{ .Title | markdownify }}</h5>
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h4 class="widget-title">What I do</h4>
+  </div>
+<div class="product row">
+  <div class="col-md-6 text-center py-5"><h3 class="widget-title">I Create Static Web Page</h3>
+  <p>I create various static webpage for instantion and personal</p>
+  </div>
+  <div class="col-md-6 bg-primary"></div>
+  <div class="col-md-6 bg-primary"></div>
+   
+  <div class="col-md-6 text-center py-5"><h3 class="widget-title">I Create System Infromation</h3>
+  
+    <p>I create various system information that run on many platform like desktop, web and android</p>
+    </div>
+   
+    <div class="col-md-6 text-center py-5"><h3 class="widget-title">I Write an Article</h3>
+    
+      <p>I Write an Article about technology and programming tutorial to sharpen my skill and knowlage.</p>
+      </div> 
+
+      <div class="col-md-6 bg-primary"></div>
+      <div class="col-md-6 bg-primary"></div>
+      <div class="col-md-6 text-center py-5"><h3 class="widget-title">I Made Tutorial on Youtube</h3>
+    
+        <p>I Also have youtube channel that provide a programming tutorial for beginner</p>
+        </div> 
+  </div>
+</div>
+{{ if .Site.Data.gallery.enable }}
+{{ with .Site.Data.gallery }}
+<section>
+  <div class="container-fluid px-0">
+    <div class="text-center">
+      <h4 class="widget-title">My Works</h4>
+    </div>
+    <div class="row no-gutters">
+      {{ range .gallery }}
+      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+        <a href="{{ .image | absURL}}" class="venobox" data-gall="gallery"><img class="img-fluid w-100"
+            src="{{ .image | absURL}}" alt=""></a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+
+
+{{ end }}
