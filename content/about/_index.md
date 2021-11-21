@@ -18,5 +18,3 @@ Software Engineer/Technology blogger looking for challenging problems to solve. 
 I’m writing this blog in the hope to provide some insight into the world of an ever learning and evolving developer.
 
 I Loved to read a novel and listen to music, especially 90's rap music.
-
-You can find me on LinkedIn 
