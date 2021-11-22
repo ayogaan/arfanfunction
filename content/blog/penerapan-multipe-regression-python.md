@@ -11,13 +11,12 @@ description: "this is meta description"
 
 # taxonomies
 categories: 
-  - "Go Language"
+  - "Machine Learning"
 tags:
-  - "Photos"
-  - "Game"
-  - "HTML"
-  - "Python"
-  - "New"
+    - "Python"
+    - "Statistic"
+    - "Computer Science"
+
 
 # post type
 type: "post"

@@ -50,33 +50,4 @@
 </div>
 </section>
 
-{{ if .Site.Data.gallery.enable }}
-{{ with .Site.Data.gallery }}
-<section>
-  <div class="container-fluid px-0">
-    <div class="text-center">
-      <h4 class="widget-title">My Works</h4>
-    </div>
-    <div class="row no-gutters">
-      {{ range .gallery }}
-      <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-        <a href="{{ .image | absURL}}" class="venobox" data-gall="gallery"><img class="img-fluid w-100"
-            src="{{ .image | absURL}}" alt=""></a>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-
-
-<section class="section-sm container p-0">
-  <di class="card bg-white border shadow m-0 p-5">
-    <h3> You Need a Software ? <br>
-      Just Hit Me Up 
-    </h3>
-  </di>
-</section>
-
 {{ end }}

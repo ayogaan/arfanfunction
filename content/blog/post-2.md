@@ -11,12 +11,14 @@ description: "this is meta description"
 
 # taxonomies
 categories: 
-  - "Programming"
+  - "Machine Learning"
 tags:
   - "Photos"
   - "Artficial Intelegence"
   - "Computer Scince"
   - "Python"
+  - "Computer Vision"
+
 
 
 # post type
